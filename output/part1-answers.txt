@@ -1,7 +1,7 @@
 q1,3
 q2,True
 q3a,False
-q4,['University of Science and Technology of China', 'Tsinghua University', 'The University of Western Australia', 'The University of Auckland', 'University of Wisconsin-Madison']
+q4,['University of Glasgow', 'The University of Hong Kong', 'University of California, Berkeley (UCB)', 'The University of Melbourne', 'Johns Hopkins University']
 q5a,[100, 100, 100, 100, 100, 100, 100, 100]
 q5b,[100, 100, 100, 100, 100, 100, 100, 100]
 q5c,800

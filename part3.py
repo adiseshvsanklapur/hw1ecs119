@@ -163,7 +163,7 @@ If you don't have a friend's machine, please speculate about
 what might happen if you tried. You can guess.
 
 === ANSWER Q5 BELOW ===
-
+likely failed due to missing git installation or different python version. system-specific paths and permissions could also cause issues.
 === END OF Q5 ANSWER ===
 
 ===== Questions 6-9: A comparison of shell vs. Python =====
