@@ -231,21 +231,20 @@ of the pipeline in part 1.
 # part1.PART_1_PIPELINE
 
 def q5a():
-    import time
-    total_items = 3 * 100
-    start = time.time()
-    part1.PART_1_PIPELINE()
-    end = time.time()
-    throughput = total_items / (end - start)
-    return throughput
+    h = ThroughputHelper()
+    df = part1.load_input()
+    size = len(df)
+    h.add_pipeline("part1_pipeline", size, part1.PART_1_PIPELINE)
+    throughputs = h.compare_throughput()
+    h.generate_plot('output/part2-q5a.png')
+    return throughputs[0]
 
 def q5b():
-    import time
-    start = time.time()
-    part1.PART_1_PIPELINE()
-    end = time.time()
-    latency = (end - start) * 1000  # Convert to milliseconds
-    return latency
+    h = LatencyHelper()
+    h.add_pipeline("part1_pipeline", part1.PART_1_PIPELINE)
+    latencies = h.compare_latency()
+    h.generate_plot('output/part2-q5b.png')
+    return latencies[0]
 
 """
 ===== Questions 6-10: Performance Comparison 1 =====
